@@ -1,2 +1,1 @@
-web: gunicorn devsearch.wsgi --log-file -
-web:gunicorn app:app
+web: gunicorn course1.wsgi --log-file -
