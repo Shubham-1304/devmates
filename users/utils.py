@@ -5,7 +5,7 @@ from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from six import text_type
 
 
-def paginateProfiles(request,profiles,results):
+def paginateProfiles(request,profiles,results=0):
     page=request.GET.get('page')
     results=results
     paginator=Paginator(profiles,results)
