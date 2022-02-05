@@ -2,8 +2,6 @@
 
 {% block content %}
 <br>
-<h1>Single-Project</h1>
-<br>
 <!--<img src="{{movie.featured_image.url}}">-->
 <h2 style="color:rgb(247, 6, 146); font-family:cursive;">{{movie.title}}</h2>
 <h3 style="color:rgb(11, 15, 252); font-family:cursive;">{% for tag in tags %}   
@@ -26,11 +24,11 @@
             {% endfor %}
           </div>
           {% if movie.source_link %}
-          <a class="singleProject__liveLink" href="#" target="_blank"><i class="im im-external-link"></i>Source Code
+          <a class="singleProject__liveLink" href="{{movie.source_link}}" target="_blank"><i class="im im-external-link"></i>Source Code
           </a>
           {% endif %}
           {% if movie.demo_link %}
-          <a class="singleProject__liveLink" href="#" target="_blank"><i class="im im-external-link"></i>Demo Link
+          <a class="singleProject__liveLink" href="{movie.demo_link}" target="_blank"><i class="im im-external-link"></i>Demo Link
           </a>
           {% endif %}
         </div>

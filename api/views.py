@@ -15,7 +15,7 @@ def getRoutes(request):
         {'POST':'/api/users/token'},
         {'POST':'/api/users/token/refresh'},
     ]
-
+    
     return Response(routes)
 
 @api_view(['GET'])
